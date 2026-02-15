@@ -1,0 +1,65 @@
+/* ---------- Reset + Base ---------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #e6e6e6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+
+/* ---------- Title ---------- */
+h1 {
+    color: #2e8b57;
+    margin-bottom: 25px;
+    font-size: 26px;
+}
+
+/* ---------- Card Container Feel ---------- */
+table {
+    width: 90%;
+    max-width: 900px;
+    border-collapse: collapse;
+    background: #f4f7f6;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* ---------- Table Header ---------- */
+th {
+    background: #2e8b57;
+    color: white;
+    padding: 14px;
+    text-align: left;
+    font-size: 15px;
+}
+
+/* ---------- Table Cells ---------- */
+td {
+    padding: 12px 14px;
+    border-bottom: 1px solid #d9e2df;
+    font-size: 14px;
+}
+
+/* ---------- Row Hover Effect ---------- */
+tr:hover td {
+    background: #e8f3ee;
+}
+
+/* ---------- Zebra Striping ---------- */
+tbody tr:nth-child(even) td {
+    background: #fafdfc;
+}
+
+/* ---------- Remove Old HTML Borders ---------- */
+table, th, td {
+    border: none;
+}
