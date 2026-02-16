@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Dashboard</title>
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Your CSS -->
+    <link rel="stylesheet" href="Dashboard.css">
+
+    <style>
+        /* Minimal fixes so icons & images look correct */
+        .side-menu ul li i {
+            width: 20px;
+        }
+
+        .icon-case i {
+            color: #555;
+        }
+
+        .content-2 table img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- SIDE MENU -->
+<div class="side-menu">
+    <div class="brand-name">
+        <h1>Dashboard</h1>
+    </div>
+    <ul>
+        <li><i class="fa-solid fa-gauge"></i>&nbsp;<span>Dashboard</span></li>
+        <li><i class="fa-solid fa-user-graduate"></i>&nbsp;<span>Student</span></li>
+        <li><i class="fa-solid fa-chalkboard-user"></i>&nbsp;<span>Teacher</span></li>
+        <li><i class="fa-solid fa-file-lines"></i>&nbsp;<span>Assignment</span></li>
+        <li><i class="fa-solid fa-pen-to-square"></i>&nbsp;<span>Examination</span></li>
+        <li><i class="fa-solid fa-book"></i>&nbsp;<span>Notes</span></li>
+        <li><i class="fa-solid fa-calendar-check"></i>&nbsp;<span>Activities</span></li>
+    </ul>
+</div>
+
+<!-- MAIN CONTAINER -->
+<div class="container">
+
+    <!-- HEADER -->
+    <div class="header">
+        <div class="nav">
+            <img id="logo"
+                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThwf0mfKoWRl49_RtF8JOPqtDoC4q08z1r3w&s">
+
+            <div class="college-name">
+                <h1>International Institute of Information Technology</h1>
+            </div>
+
+            <div class="user">
+                <a href="#" class="btn">Add User</a>
+                <i class="fa-solid fa-bell"></i>
+                <div class="img-case">
+                    <img src="https://i.pravatar.cc/50" alt="Admin">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CONTENT -->
+    <div class="content">
+
+        <!-- CARDS -->
+        <div class="cards">
+
+            <div class="card">
+                <div class="box">
+                    <h1>3200</h1>
+                    <h3>Students</h3>
+                </div>
+                <div class="icon-case">
+                    <i class="fa-solid fa-user-graduate fa-3x"></i>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="box">
+                    <h1>21</h1>
+                    <h3>Assignments</h3>
+                </div>
+                <div class="icon-case">
+                    <i class="fa-solid fa-file-circle-check fa-3x"></i>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="box">
+                    <h1>200</h1>
+                    <h3>Teachers</h3>
+                </div>
+                <div class="icon-case">
+                    <i class="fa-solid fa-chalkboard-user fa-3x"></i>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="box">
+                    <h1>12/01/2025</h1>
+                    <h3>Exam Date</h3>
+                </div>
+                <div class="icon-case">
+                    <i class="fa-solid fa-calendar-days fa-3x"></i>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- TABLES -->
+        <div class="content-1">
+
+            <!-- ACTIVITIES -->
+            <div class="activity">
+                <div class="title">
+                    <h2>Activities</h2>
+                    <a href="#" class="btn">View All</a>
+                </div>
+
+                <table>
+                    <tr>
+                        <th>Activity Name</th>
+                        <th>Class</th>
+                        <th>Total Students</th>
+                        <th>Winner</th>
+                    </tr>
+                    <tr>
+                        <td>Extempore</td>
+                        <td>SE</td>
+                        <td>65</td>
+                        <td>Tanish</td>
+                    </tr>
+                    <tr>
+                        <td>Aptitude</td>
+                        <td>TE</td>
+                        <td>70</td>
+                        <td>Shreya</td>
+                    </tr>
+                    <tr>
+                        <td>Painting</td>
+                        <td>ALL</td>
+                        <td>100</td>
+                        <td>Yash</td>
+                    </tr>
+                    <tr>
+                        <td>Group Discussion</td>
+                        <td>TE</td>
+                        <td>75</td>
+                        <td>Abhay</td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- NEW STUDENTS -->
+            <div class="content-2">
+                <div class="title">
+                    <h2>New Students</h2>
+                    <a href="#" class="btn">View All</a>
+                </div>
+
+                <table>
+                    <tr>
+                        <th>Profile</th>
+                        <th>Name</th>
+                        <th>Details</th>
+                    </tr>
+                    <tr>
+                        <td><img src="https://i.pravatar.cc/40?img=1"></td>
+                        <td>Tanish</td>
+                        <td><button class="btn">View</button></td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://i.pravatar.cc/40?img=2"></td>
+                        <td>Shreya</td>
+                        <td><button class="btn">View</button></td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://i.pravatar.cc/40?img=3"></td>
+                        <td>Yash</td>
+                        <td><button class="btn">View</button></td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://i.pravatar.cc/40?img=4"></td>
+                        <td>Abhay</td>
+                        <td><button class="btn">View</button></td>
+                    </tr>
+                </table>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
