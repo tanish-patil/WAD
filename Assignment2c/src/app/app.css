@@ -1,0 +1,87 @@
+/* Page background */
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #eef2f7, #dfe9f3);
+}
+
+/* Form container */
+.container {
+  max-width: 420px;
+  margin: 40px auto;
+  background: white;
+  padding: 25px 30px;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Headings */
+h1 {
+  text-align: center;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+h2 {
+  margin-top: 20px;
+  color: #555;
+}
+
+/* Labels */
+label {
+  display: block;
+  margin-top: 12px;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Inputs */
+input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  transition: border 0.2s, box-shadow 0.2s;
+}
+
+input:focus {
+  border-color: #4a90e2;
+  box-shadow: 0 0 5px rgba(74, 144, 226, 0.4);
+  outline: none;
+}
+
+/* Button */
+button {
+  width: 100%;
+  margin-top: 18px;
+  padding: 12px;
+  background: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+}
+
+button:hover {
+  background: #357abd;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+/* Registered details box */
+.details {
+  margin-top: 20px;
+  background: #f8fbff;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #e0e6ed;
+}
+
+.details p {
+  margin: 6px 0;
+}
