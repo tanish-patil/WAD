@@ -1,0 +1,110 @@
+/* ===== Global Reset ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Trebuchet MS", sans-serif;
+}
+
+/* ===== Background ===== */
+body {
+    background: linear-gradient(to bottom, #1b1b2f, #16213e);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* ===== Main Game Container ===== */
+#game {
+    width: 700px;
+    background: #0f3460;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 0 25px rgba(0,0,0,0.8);
+    color: #ffffff;
+}
+
+/* ===== Stats Section ===== */
+#stats {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background: #16213e;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.stat {
+    font-size: 14px;
+    margin: 5px 10px;
+}
+
+.stat strong {
+    color: #fca311;
+}
+
+/* ===== Controls Section ===== */
+#controls {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+button {
+    background: #e94560;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    margin: 8px;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    min-width: 120px;
+}
+
+button:hover {
+    background: #ff2e63;
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+/* ===== Monster Stats ===== */
+#monsterstats {
+    display: none; /* Show this dynamically in JS when fighting */
+    background: #3a0ca3;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #f1faee;
+}
+
+/* ===== Welcome Text ===== */
+#welcome {
+    background: #16213e;
+    padding: 20px;
+    border-radius: 10px;
+    line-height: 1.6;
+    font-size: 15px;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+    #game {
+        width: 95%;
+    }
+
+    #stats {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    button {
+        width: 100%;
+    }
+}

@@ -1,0 +1,11 @@
+add.py:
+a=int(input("Enter first number: "));
+b=int(input("Enter second number: "));
+print("Sum is:",a+b)
+
+
+Output:
+Enter first number: 10
+Enter second number: 20
+Sum is: 30
+root@505cbc75e781:/#

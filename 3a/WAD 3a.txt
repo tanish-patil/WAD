@@ -1,0 +1,217 @@
+index.js:
+const express=require('express');
+const app=express();
+app.use(express.static('public'))
+app.listen(4000,()=>{
+    console.log('server is running on port 4000');
+})
+
+
+index.html:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tanish Patil TIB58</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game">
+        <div id="stats">
+            <span class="stat">XP: <strong><span id="xpText">0</span></strong></span>
+            <span class="stat">Health: <strong><span id="healthText">100</span></strong></span>
+            <span class="stat">Gold: <strong><span id="goldText">100</span></strong></span>
+            <span class="stat">Damage: <strong><span id="damageText">10</span></strong></span>
+            <span class="stat">Weapon: <strong><span id="weaponText">Stick</span></strong></span>
+        </div>
+        <div id="controls">
+            <button id="store">Go to store</button>
+            <button id="loc">Go to cave</button>
+            <button id="fight">Fight!</button>
+        </div>
+        <div id="monsterstats">
+            <span class="stat">Monster Name:<strong><span id="monstername"></span></strong></span><br>
+            <span class="stat">Monster Health:<strong><span id="monsterhealth"></span></strong></span>
+        </div>
+        <div id="welcome">
+            Welcome to the game. You must slay the dragon that is eating the people of Magentano.<br>
+            You are in <strong>Town Square</strong> right now.
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+style.css:
+/* ===== Global Reset ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Trebuchet MS", sans-serif;
+}
+
+/* ===== Background ===== */
+body {
+    background: linear-gradient(to bottom, #1b1b2f, #16213e);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* ===== Main Game Container ===== */
+#game {
+    width: 700px;
+    background: #0f3460;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 0 25px rgba(0,0,0,0.8);
+    color: #ffffff;
+}
+
+/* ===== Stats Section ===== */
+#stats {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background: #16213e;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.stat {
+    font-size: 14px;
+    margin: 5px 10px;
+}
+
+.stat strong {
+    color: #fca311;
+}
+
+/* ===== Controls Section ===== */
+#controls {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+button {
+    background: #e94560;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    margin: 8px;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    min-width: 120px;
+}
+
+button:hover {
+    background: #ff2e63;
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+/* ===== Monster Stats ===== */
+#monsterstats {
+    display: none; /* Show this dynamically in JS when fighting */
+    background: #3a0ca3;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #f1faee;
+}
+
+/* ===== Welcome Text ===== */
+#welcome {
+    background: #16213e;
+    padding: 20px;
+    border-radius: 10px;
+    line-height: 1.6;
+    font-size: 15px;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+    #game {
+        width: 95%;
+    }
+
+    #stats {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+
+	
+
+
+
+Commands:
+D:\College\WAD\WAD\3a>npm init
+This utility will walk you through creating a package.json file.
+It only covers the most common items, and tries to guess sensible defaults.
+
+See `npm help init` for definitive documentation on these fields
+and exactly what they do.
+
+Use `npm install <pkg>` afterwards to install a package and
+save it as a dependency in the package.json file.
+
+Press ^C at any time to quit.
+package name: (3a) wad
+version: (1.0.0)
+description: practical
+entry point: (index.js)
+test command:
+git repository:
+keywords:
+author: tanish patil
+license: (ISC)
+type: (commonjs)
+About to write to D:\College\WAD\WAD\3a\package.json:
+
+{
+  "name": "wad",
+  "version": "1.0.0",
+  "description": "practical",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "tanish patil",
+  "license": "ISC",
+  "type": "commonjs"
+}
+
+
+Is this OK? (yes) yes
+npm notice
+npm notice New minor version of npm available! 11.10.1 -> 11.11.0
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.11.0
+npm notice To update run: npm install -g npm@11.11.0
+npm notice
+
+D:\College\WAD\WAD\3a>npm install express --save
+
+added 65 packages, and audited 66 packages in 11s
+
+22 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+D:\College\WAD\WAD\3a>node index.js
+server is running on port 4000
